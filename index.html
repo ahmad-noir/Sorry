@@ -4,129 +4,169 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Faiza ❤️</title>
+<title>A Little Surprise For Faiza ❤️</title>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* { margin:0; padding:0; box-sizing:border-box; }
 
 body {
-  min-height: 100vh;
-  font-family: 'Georgia', serif;
-  background: linear-gradient(135deg, #ffe5ed, #fff5f7, #fce0e9);
-  color: #803d57;
-  overflow-x: hidden;
-  text-align: center;
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(135deg,#ffe0eb,#fff3f6,#fbd8e5);
+  color:#87445d;
+  text-align:center;
+  overflow-x:hidden;
 }
 
-.container {
-  width: 90%;
-  max-width: 450px;
-  margin: 55px auto;
-  padding: 35px 23px;
-  background: rgba(255,255,255,0.75);
-  border: 1px solid #ffffff;
-  border-radius: 25px;
-  box-shadow: 0 12px 35px #c77b9630;
-  position: relative;
-  z-index: 2;
+section {
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:30px 16px;
+  position:relative;
 }
 
-.tulip {
-  font-size: 65px;
-  margin-bottom: 15px;
-  animation: float 3s ease-in-out infinite;
+.card {
+  background:rgba(255,255,255,.78);
+  border:1px solid white;
+  border-radius:28px;
+  padding:32px 22px;
+  width:100%;
+  max-width:460px;
+  box-shadow:0 15px 45px #b94f7030;
+  position:relative;
+  z-index:2;
 }
 
 h1 {
-  font-size: 38px;
-  color: #bd5579;
-  margin-bottom: 12px;
+  font-family:'Dancing Script',cursive;
+  font-size:49px;
+  color:#c34e79;
+  margin:12px 0;
 }
 
-.subtitle {
-  font-size: 19px;
-  font-style: italic;
-  margin-bottom: 25px;
+h2 {
+  font-family:'Dancing Script',cursive;
+  font-size:34px;
+  color:#c34e79;
 }
 
 p {
-  line-height: 1.8;
-  font-size: 16px;
-  margin: 15px 0;
-}
-
-.heart {
-  color: #ed7296;
-  font-size: 25px;
+  font-size:14px;
+  line-height:1.9;
+  margin:15px 0;
 }
 
 button {
-  border: none;
-  border-radius: 30px;
-  padding: 14px 25px;
-  margin: 12px 5px;
-  background: #d96c91;
-  color: white;
-  font-size: 15px;
-  cursor: pointer;
-  box-shadow: 0 5px 15px #d96c9140;
-  transition: 0.3s;
+  border:0;
+  border-radius:30px;
+  background:#d7658c;
+  color:white;
+  padding:13px 23px;
+  margin:9px 5px;
+  font-size:14px;
+  font-family:inherit;
+  cursor:pointer;
+  box-shadow:0 5px 15px #d7658c35;
+  transition:.3s;
 }
 
-button:hover {
-  transform: scale(1.06);
-  background: #bd5579;
+button:hover { transform:scale(1.06); }
+
+.secondary {
+  background:#f3d5e0;
+  color:#a04466;
+}
+
+.tulips {
+  font-size:65px;
+  animation:float 3s infinite ease-in-out;
+}
+
+.small {
+  font-size:12px;
+  color:#b47a8e;
+}
+
+.heart {
+  color:#ec7199;
+  font-size:25px;
 }
 
 #letter {
-  display: none;
-  margin-top: 25px;
-  padding: 20px;
-  background: #fff0f4;
-  border-radius: 18px;
-  animation: appear 1s ease;
+  display:none;
+  background:#fff0f5;
+  padding:22px;
+  border-radius:20px;
+  margin-top:20px;
+  animation:fade .8s;
 }
 
-#response {
-  min-height: 35px;
-  margin-top: 15px;
-  font-size: 17px;
-  color: #bd5579;
+#typing {
+  white-space:pre-line;
+  text-align:left;
+  min-height:100px;
+  font-family:'Dancing Script',cursive;
+  font-size:23px;
+  line-height:1.8;
 }
 
-.flower {
-  position: fixed;
-  top: -40px;
-  font-size: 22px;
-  animation: fall linear infinite;
-  pointer-events: none;
-  z-index: 1;
+.envelope {
+  font-size:90px;
+  cursor:pointer;
+  animation:float 2s infinite;
 }
 
-@keyframes fall {
-  to {
-    transform: translateY(110vh) rotate(360deg);
-  }
+#surprise {
+  display:none;
+  animation:fade 1s;
+  margin-top:20px;
+}
+
+#answer {
+  font-size:17px;
+  min-height:45px;
+  color:#bd4f78;
+  margin-top:15px;
+}
+
+.floating {
+  position:fixed;
+  top:-40px;
+  z-index:1;
+  pointer-events:none;
+  animation:fall linear forwards;
+}
+
+.sparkle {
+  position:fixed;
+  pointer-events:none;
+  animation:twinkle 2s infinite;
+}
+
+footer {
+  font-size:12px;
+  color:#b47a8e;
+  margin-top:25px;
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
+  50% { transform:translateY(-13px); }
 }
 
-@keyframes appear {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
+@keyframes fade {
+  from {opacity:0;transform:translateY(15px);}
+  to {opacity:1;transform:translateY(0);}
 }
 
-.footer {
-  margin-top: 25px;
-  font-size: 13px;
-  color: #b77a8e;
+@keyframes fall {
+  to { transform:translateY(110vh) rotate(360deg); }
+}
+
+@keyframes twinkle {
+  50% { opacity:.2; transform:scale(.6); }
 }
 
 </style>
@@ -134,134 +174,219 @@ button:hover {
 
 <body>
 
-<div class="container">
+<!-- MAIN PAGE -->
+<section>
+<div class="card">
 
-  <div class="tulip">🌷</div>
+  <div class="tulips">🌷🌷🌷</div>
 
-  <h1>Hey Faiza ❤️</h1>
+  <p class="small">A LITTLE SOMETHING MADE WITH LOVE</p>
 
-  <div class="subtitle">
+  <h1>Hey, Faiza ❤️</h1>
+
+  <p style="font-size:17px">
     My Faizuuu, My Shernii...
-  </div>
-
-  <p>
-    I know you're angry with me right now.
-    And maybe I deserve that.
-  </p>
-
-  <p>
-    But I really don't like knowing that
-    I've hurt someone who means so much to me.
   </p>
 
   <div class="heart">♡</div>
 
   <p>
-    I don't want to make excuses.
-    I just want to say...
+    I know you might be angry with me.
+    But I wanted to make something special
+    just to bring a little smile to your face.
   </p>
-
-  <h2 style="color:#c65c80;">I'm Sorry, Faiza 🥺</h2>
 
   <p>
-    You deserve smiles, happiness and beautiful moments.
-    Not reasons to be upset.
+    So take a deep breath, relax,
+    and let me have a little moment of your time. 🥺
   </p>
 
-  <button onclick="showLetter()">
-    Open my little message 💌
+  <button onclick="goToLetter()">
+    There's something for you 💌
   </button>
+
+  <footer>Scroll into a little world made for you 🌸</footer>
+
+</div>
+</section>
+
+
+<!-- LETTER SECTION -->
+<section id="letterSection">
+<div class="card">
+
+  <h2>A Letter For You</h2>
+
+  <p>Someone has something to say...</p>
+
+  <div class="envelope" onclick="openLetter()">💌</div>
+
+  <p class="small">Tap the envelope to open it</p>
 
   <div id="letter">
-
-    <h2>For You, Faizuuu 💗</h2>
-
-    <p>
-      My dear Shernii,
-    </p>
-
-    <p>
-      If I could send you a garden,
-      I'd fill it with your favourite tulips. 🌷
-      Not because flowers can fix everything,
-      but because you deserve beautiful things.
-    </p>
-
-    <p>
-      I may not always get everything right,
-      but I'm genuinely sorry for upsetting you.
-      I'll try to understand you better
-      instead of just saying sorry.
-    </p>
-
-    <p>
-      I hope this little surprise brings
-      even a tiny smile to your face.
-    </p>
-
-    <p>
-      No pressure to forgive me immediately.
-      Take your time. ❤️
-    </p>
-
-    <h3 style="color:#bd5579;">
-      Always your Faizuuu's admirer 💕
-    </h3>
-
-  </div>
-
-  <button onclick="sendSmile()">
-    One little smile? 🥺
-  </button>
-
-  <div id="response"></div>
-
-  <div class="footer">
-    Made with love, just for Faiza 🌷
+    <div id="typing"></div>
   </div>
 
 </div>
+</section>
+
+
+<!-- LITTLE INTERACTION -->
+<section>
+<div class="card">
+
+  <div class="tulips">🌷</div>
+
+  <h2>One Little Question...</h2>
+
+  <p>Are you still angry with me, Faizuuu? 🥺</p>
+
+  <button onclick="answerYes()">
+    Yes, I'm still angry 😤
+  </button>
+
+  <button class="secondary" onclick="answerNo()">
+    Maybe a little less ❤️
+  </button>
+
+  <div id="answer"></div>
+
+</div>
+</section>
+
+
+<!-- FINAL SURPRISE -->
+<section>
+<div class="card">
+
+  <h2>A Tiny Surprise ✨</h2>
+
+  <p>
+    I have one last thing to show you.
+  </p>
+
+  <button onclick="showSurprise()">
+    Open your surprise 🎁
+  </button>
+
+  <div id="surprise">
+
+    <div class="tulips">🌷💗🌷</div>
+
+    <h1>For Faiza</h1>
+
+    <p>
+      If I could fill your world with flowers,
+      I'd choose tulips because I know you love them.
+    </p>
+
+    <p>
+      And if I could wish one thing for you,
+      it would be that you always have
+      a reason to smile.
+    </p>
+
+    <h2>You're special. ❤️</h2>
+
+    <p>
+      No pressure, no hurry.
+      Just a genuine sorry from me.
+    </p>
+
+  </div>
+
+  <footer>Made especially for Faiza ❤️</footer>
+
+</div>
+</section>
+
 
 <script>
 
-function showLetter() {
-  const letter = document.getElementById("letter");
-  letter.style.display = "block";
-  letter.scrollIntoView({
-    behavior: "smooth",
-    block: "center"
-  });
+let opened = false;
+
+function goToLetter() {
+  document.getElementById("letterSection")
+  .scrollIntoView({behavior:"smooth"});
 }
 
-function sendSmile() {
-  document.getElementById("response").innerHTML =
-    "Even one little smile from you would make my day. 🥹❤️";
+function openLetter() {
+
+  if(opened) return;
+  opened = true;
+
+  document.getElementById("letter").style.display="block";
+
+  const message =
+`Dear Faizuuu ❤️
+
+I know I upset you, and I'm genuinely sorry.
+
+I don't want to make excuses or pretend that nothing happened.
+
+Your feelings matter, and I wish I had been more careful.
+
+You bring so much happiness into my days, and I never want you to feel that you aren't appreciated.
+
+My Shernii, I hope you know how special you are.
+
+I can't promise to be perfect, but I can promise to listen, understand and try to do better.
+
+Take your time. I'll respect your feelings.
+
+One genuine sorry, with lots of love. ❤️
+
+— From someone who wants to see you smile`;
+
+  let i=0;
+
+  function type() {
+    if(i<message.length) {
+      document.getElementById("typing").textContent += message.charAt(i);
+      i++;
+      setTimeout(type,35);
+    }
+  }
+
+  type();
 }
 
-// Falling tulips and hearts
-const flowers = ["🌷", "🌸", "💗", "💕", "🌷"];
+function answerYes() {
+  document.getElementById("answer").innerHTML =
+  "Okayyy 😭 I understand. I won't rush you. Just know I'm genuinely sorry. ❤️";
+}
+
+function answerNo() {
+  document.getElementById("answer").innerHTML =
+  "A little less? That's a tiny victory! 🥹❤️ Sending you a virtual hug.";
+}
+
+function showSurprise() {
+  document.getElementById("surprise").style.display="block";
+  document.getElementById("surprise")
+  .scrollIntoView({behavior:"smooth",block:"center"});
+}
+
+// Floating tulip petals and hearts
+const symbols=["🌷","💗","💕","🌸","✨"];
 
 function createFlower() {
-  const flower = document.createElement("div");
-  flower.className = "flower";
-  flower.innerHTML =
-    flowers[Math.floor(Math.random() * flowers.length)];
+  const el=document.createElement("div");
+  el.className="floating";
+  el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+  el.style.left=Math.random()*100+"vw";
+  el.style.fontSize=(15+Math.random()*18)+"px";
+  el.style.animationDuration=(6+Math.random()*6)+"s";
 
-  flower.style.left = Math.random() * 100 + "vw";
-  flower.style.animationDuration =
-    (5 + Math.random() * 6) + "s";
+  document.body.appendChild(el);
 
-  flower.style.opacity = Math.random() * 0.5 + 0.5;
-
-  document.body.appendChild(flower);
-
-  setTimeout(() => flower.remove(), 11000);
+  setTimeout(()=>el.remove(),12000);
 }
 
-setInterval(createFlower, 600);
+setInterval(createFlower,650);
 
 </script>
 
 </body>
-  </html>
-  
+      </html>
+      
