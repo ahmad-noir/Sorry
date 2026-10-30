@@ -4,169 +4,267 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A Little Surprise For Faiza ❤️</title>
+<title>For My Faizuuu 🌷</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
-* { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --pink:#f6a5c0;
+  --dark:#9d4168;
+  --light:#fff0f5;
+  --white:#fffafd;
+}
 
-body {
-  font-family:'Poppins',sans-serif;
-  background:linear-gradient(135deg,#ffe0eb,#fff3f6,#fbd8e5);
-  color:#87445d;
-  text-align:center;
+*{margin:0;padding:0;box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+  background:#180e20;
+  color:white;
+  font-family:Poppins,sans-serif;
   overflow-x:hidden;
 }
 
-section {
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:30px 16px;
-  position:relative;
-}
-
-.card {
-  background:rgba(255,255,255,.78);
-  border:1px solid white;
-  border-radius:28px;
-  padding:32px 22px;
-  width:100%;
-  max-width:460px;
-  box-shadow:0 15px 45px #b94f7030;
-  position:relative;
-  z-index:2;
-}
-
-h1 {
-  font-family:'Dancing Script',cursive;
-  font-size:49px;
-  color:#c34e79;
-  margin:12px 0;
-}
-
-h2 {
-  font-family:'Dancing Script',cursive;
-  font-size:34px;
-  color:#c34e79;
-}
-
-p {
-  font-size:14px;
-  line-height:1.9;
-  margin:15px 0;
-}
-
-button {
-  border:0;
-  border-radius:30px;
-  background:#d7658c;
+button{
+  border:none;
+  padding:14px 25px;
+  border-radius:35px;
+  background:linear-gradient(135deg,#ff8eb5,#d95087);
   color:white;
-  padding:13px 23px;
-  margin:9px 5px;
   font-size:14px;
-  font-family:inherit;
+  font-weight:600;
   cursor:pointer;
-  box-shadow:0 5px 15px #d7658c35;
+  box-shadow:0 7px 25px #ec78a344;
   transition:.3s;
 }
 
-button:hover { transform:scale(1.06); }
+button:hover{transform:translateY(-3px) scale(1.03)}
 
-.secondary {
-  background:#f3d5e0;
-  color:#a04466;
-}
+button:active{transform:scale(.97)}
 
-.tulips {
-  font-size:65px;
-  animation:float 3s infinite ease-in-out;
-}
-
-.small {
-  font-size:12px;
-  color:#b47a8e;
-}
-
-.heart {
-  color:#ec7199;
-  font-size:25px;
-}
-
-#letter {
-  display:none;
-  background:#fff0f5;
-  padding:22px;
-  border-radius:20px;
-  margin-top:20px;
-  animation:fade .8s;
-}
-
-#typing {
-  white-space:pre-line;
-  text-align:left;
-  min-height:100px;
+.script{
   font-family:'Dancing Script',cursive;
-  font-size:23px;
-  line-height:1.8;
 }
 
-.envelope {
-  font-size:90px;
-  cursor:pointer;
-  animation:float 2s infinite;
+section{
+  min-height:100svh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:35px 18px;
+  position:relative;
+  overflow:hidden;
 }
 
-#surprise {
-  display:none;
-  animation:fade 1s;
-  margin-top:20px;
+.content{
+  width:100%;
+  max-width:470px;
+  text-align:center;
+  position:relative;
+  z-index:3;
 }
 
-#answer {
-  font-size:17px;
-  min-height:45px;
-  color:#bd4f78;
-  margin-top:15px;
+.small{
+  font-size:10px;
+  letter-spacing:4px;
+  color:#f7a9c4;
+  margin-bottom:20px;
 }
 
-.floating {
+h1{
+  font-family:'Dancing Script',cursive;
+  font-size:clamp(48px,13vw,75px);
+  color:#ffb1cc;
+  line-height:1.1;
+  margin:15px 0;
+}
+
+h2{
+  font-family:'Dancing Script',cursive;
+  font-size:43px;
+  color:#ffb1cc;
+  margin:15px 0;
+}
+
+p{
+  font-size:14px;
+  line-height:2;
+  color:#f7dce7;
+  margin:17px 0;
+}
+
+.glass{
+  background:rgba(255,255,255,.075);
+  backdrop-filter:blur(15px);
+  border:1px solid #ffffff20;
+  border-radius:30px;
+  padding:30px 22px;
+  box-shadow:0 15px 55px #00000035;
+}
+
+.hero-flower{
+  font-size:85px;
+  filter:drop-shadow(0 0 25px #f98bb9);
+  animation:bloom 3s infinite ease-in-out;
+}
+
+@keyframes bloom{
+  50%{transform:translateY(-15px) rotate(5deg)}
+}
+
+@keyframes glow{
+  50%{text-shadow:0 0 25px #ff87b7}
+}
+
+@keyframes appear{
+  from{opacity:0;transform:translateY(25px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+@keyframes fall{
+  to{transform:translateY(110vh) rotate(400deg)}
+}
+
+@keyframes pulse{
+  50%{transform:scale(1.12)}
+}
+
+@keyframes twinkle{
+  50%{opacity:.25;transform:scale(.5)}
+}
+
+.fade{animation:appear 1s ease}
+
+#stars{
   position:fixed;
-  top:-40px;
-  z-index:1;
+  inset:0;
   pointer-events:none;
-  animation:fall linear forwards;
+  z-index:0;
 }
 
-.sparkle {
-  position:fixed;
-  pointer-events:none;
+.star{
+  position:absolute;
+  color:#fff0c7;
   animation:twinkle 2s infinite;
 }
 
-footer {
+.petal{
+  position:fixed;
+  top:-40px;
+  pointer-events:none;
+  z-index:2;
+  animation:fall linear forwards;
+}
+
+#progress{
+  position:fixed;
+  top:0;
+  left:0;
+  height:3px;
+  background:#ff91b9;
+  width:0%;
+  z-index:10;
+}
+
+#music{
+  position:fixed;
+  top:15px;
+  right:15px;
+  z-index:10;
+  padding:10px 14px;
   font-size:12px;
-  color:#b47a8e;
+  background:#ffffff20;
+  border:1px solid #ffffff30;
+  backdrop-filter:blur(10px);
+}
+
+.envelope{
+  font-size:100px;
+  cursor:pointer;
+  display:inline-block;
+  animation:pulse 2s infinite;
+}
+
+#letter{
+  display:none;
   margin-top:25px;
+  padding:22px;
+  background:#fff0f5;
+  border-radius:20px;
+  color:#91405e;
+  text-align:left;
+  animation:appear 1s;
 }
 
-@keyframes float {
-  50% { transform:translateY(-13px); }
+#letter p{color:#91405e}
+
+#typed{
+  white-space:pre-line;
+  line-height:2;
+  font-family:'Dancing Script',cursive;
+  font-size:21px;
 }
 
-@keyframes fade {
-  from {opacity:0;transform:translateY(15px);}
-  to {opacity:1;transform:translateY(0);}
+.option{
+  display:block;
+  width:100%;
+  margin:12px 0;
+  background:#ffffff12;
+  border:1px solid #ffffff30;
+  color:white;
 }
 
-@keyframes fall {
-  to { transform:translateY(110vh) rotate(360deg); }
+#reply{
+  min-height:55px;
+  margin-top:15px;
+  color:#ffb3cf;
+  font-size:14px;
+  line-height:1.8;
 }
 
-@keyframes twinkle {
-  50% { opacity:.2; transform:scale(.6); }
+.photo-frame{
+  width:100%;
+  height:220px;
+  border-radius:22px;
+  border:2px dashed #ffb2ce;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#ffffff0b;
+  overflow:hidden;
+  margin:20px 0;
+  color:#ffb2ce;
+  font-size:13px;
+  padding:15px;
+}
+
+.photo-frame img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+input[type=file]{display:none}
+
+.garden{
+  font-size:48px;
+  line-height:1.8;
+  animation:appear 2s;
+}
+
+.final-heart{
+  font-size:75px;
+  animation:pulse 1.5s infinite;
+  filter:drop-shadow(0 0 20px #fa80ad);
+}
+
+footer{
+  color:#c88da7;
+  font-size:11px;
+  margin-top:30px;
+  letter-spacing:1px;
 }
 
 </style>
@@ -174,128 +272,271 @@ footer {
 
 <body>
 
-<!-- MAIN PAGE -->
-<section>
-<div class="card">
+<div id="progress"></div>
+<div id="stars"></div>
 
-  <div class="tulips">🌷🌷🌷</div>
+<button id="music" onclick="toggleMusic()">♫ Music: OFF</button>
 
-  <p class="small">A LITTLE SOMETHING MADE WITH LOVE</p>
+<audio id="song" loop>
+  <!-- Add your own romantic MP3 URL here if you want -->
+</audio>
 
-  <h1>Hey, Faiza ❤️</h1>
+<!-- PAGE 1: INTRO -->
+<section id="home">
+<div class="content glass">
 
-  <p style="font-size:17px">
-    My Faizuuu, My Shernii...
-  </p>
+  <div class="small">A LITTLE SURPRISE FOR SOMEONE SPECIAL</div>
 
-  <div class="heart">♡</div>
+  <div class="hero-flower">🌷</div>
 
-  <p>
-    I know you might be angry with me.
-    But I wanted to make something special
-    just to bring a little smile to your face.
-  </p>
+  <h1>Hey, Faizuuu!</h1>
 
   <p>
-    So take a deep breath, relax,
-    and let me have a little moment of your time. 🥺
+    I've created a tiny little universe...
+    just for you.
   </p>
 
-  <button onclick="goToLetter()">
-    There's something for you 💌
+  <p>
+    No worries, no stress.
+    Just a few moments of sweetness. 💗
+  </p>
+
+  <button onclick="next('garden')">
+    Enter your little world ✨
   </button>
 
-  <footer>Scroll into a little world made for you 🌸</footer>
+  <footer>MADE WITH A LITTLE LOVE ❤️</footer>
 
 </div>
 </section>
 
 
-<!-- LETTER SECTION -->
-<section id="letterSection">
-<div class="card">
+<!-- PAGE 2: TULIP GARDEN -->
+<section id="garden">
+<div class="content glass">
 
-  <h2>A Letter For You</h2>
+  <div class="small">YOUR FAVOURITE FLOWERS</div>
 
-  <p>Someone has something to say...</p>
+  <h2>A Garden For You</h2>
+
+  <div class="garden">
+    🌷 🌷 🌷<br>
+    🌸 🌷 🌸<br>
+    🌷 🌷 🌷
+  </div>
+
+  <p>
+    I remembered that you love tulips.
+    So I couldn't make this little world
+    without filling it with them.
+  </p>
+
+  <p>
+    If happiness had a garden,
+    I would want you to have the prettiest one. 🌷
+  </p>
+
+  <button onclick="next('apology')">
+    There's something I want to say 💌
+  </button>
+
+</div>
+</section>
+
+
+<!-- PAGE 3: APOLOGY -->
+<section id="apology">
+<div class="content glass">
+
+  <div class="small">A MESSAGE FROM MY HEART</div>
+
+  <h2>I'm Sorry, Faizuuu</h2>
+
+  <div style="font-size:55px">🥺💗</div>
+
+  <p>
+    I know you're angry with me.
+    And I know a simple sorry can't
+    magically fix everything.
+  </p>
+
+  <p>
+    But I genuinely feel bad for upsetting you.
+    I don't want to ignore your feelings
+    or make excuses.
+  </p>
+
+  <p>
+    You deserve to be heard, understood
+    and treated with care.
+  </p>
+
+  <button onclick="next('letterPage')">
+    Open a letter for you 💌
+  </button>
+
+</div>
+</section>
+
+
+<!-- PAGE 4: LETTER -->
+<section id="letterPage">
+<div class="content glass">
+
+  <div class="small">SEALED WITH LOVE</div>
+
+  <h2>One Letter...</h2>
+
+  <p>Tap the envelope, Faizuuu.</p>
 
   <div class="envelope" onclick="openLetter()">💌</div>
 
-  <p class="small">Tap the envelope to open it</p>
-
   <div id="letter">
-    <div id="typing"></div>
+    <h2 style="font-size:35px">Dear Faizuuu ❤️</h2>
+    <div id="typed"></div>
   </div>
 
-</div>
-</section>
-
-
-<!-- LITTLE INTERACTION -->
-<section>
-<div class="card">
-
-  <div class="tulips">🌷</div>
-
-  <h2>One Little Question...</h2>
-
-  <p>Are you still angry with me, Faizuuu? 🥺</p>
-
-  <button onclick="answerYes()">
-    Yes, I'm still angry 😤
+  <button onclick="next('littleThings')" style="margin-top:25px">
+    Continue our little story →
   </button>
-
-  <button class="secondary" onclick="answerNo()">
-    Maybe a little less ❤️
-  </button>
-
-  <div id="answer"></div>
 
 </div>
 </section>
 
 
-<!-- FINAL SURPRISE -->
-<section>
-<div class="card">
+<!-- PAGE 5: LITTLE THINGS -->
+<section id="littleThings">
+<div class="content glass">
 
-  <h2>A Tiny Surprise ✨</h2>
+  <div class="small">SOME LITTLE THINGS</div>
+
+  <h2>Things I Want You To Know</h2>
+
+  <div style="font-size:45px">🧸💗</div>
+
+  <p>01 — Your happiness matters.</p>
+  <p>02 — Your feelings deserve respect.</p>
+  <p>03 — You don't have to pretend you're okay.</p>
+  <p>04 — You can take all the time you need.</p>
+  <p>05 — I really hope I can make you smile again.</p>
+
+  <button onclick="next('question')">
+    One little question? 🥺
+  </button>
+
+</div>
+</section>
+
+
+<!-- PAGE 6: INTERACTIVE -->
+<section id="question">
+<div class="content glass">
+
+  <div class="small">BE HONEST WITH ME</div>
+
+  <h2>Still Angry, Faizuuu? 🥺</h2>
 
   <p>
-    I have one last thing to show you.
+    I promise I won't force you to smile.
+    Just tell me how you're feeling.
   </p>
 
-  <button onclick="showSurprise()">
-    Open your surprise 🎁
+  <button class="option" onclick="answer(1)">
+    YES! VERY ANGRY 😤
   </button>
 
-  <div id="surprise">
+  <button class="option" onclick="answer(2)">
+    A little angry still 🙄
+  </button>
 
-    <div class="tulips">🌷💗🌷</div>
+  <button class="option" onclick="answer(3)">
+    I'm feeling better 💗
+  </button>
 
-    <h1>For Faiza</h1>
+  <div id="reply"></div>
 
-    <p>
-      If I could fill your world with flowers,
-      I'd choose tulips because I know you love them.
-    </p>
+  <button onclick="next('starsPage')">
+    One more surprise ✨
+  </button>
 
-    <p>
-      And if I could wish one thing for you,
-      it would be that you always have
-      a reason to smile.
-    </p>
+</div>
+</section>
 
-    <h2>You're special. ❤️</h2>
 
-    <p>
-      No pressure, no hurry.
-      Just a genuine sorry from me.
-    </p>
+<!-- PAGE 7: STARRY NIGHT -->
+<section id="starsPage">
+<div class="content glass">
 
-  </div>
+  <div class="small">A LITTLE NIGHT SKY</div>
 
-  <footer>Made especially for Faiza ❤️</footer>
+  <div style="font-size:70px">🌙</div>
+
+  <h2>Look At The Stars</h2>
+
+  <p>
+    Somewhere under this same sky,
+    there's someone who deserves
+    all the beautiful things in life.
+  </p>
+
+  <p>
+    I hope your days are filled with
+    laughter, your nights with peace,
+    and your heart with happiness.
+  </p>
+
+  <div style="font-size:40px">✨ ⭐ ✨</div>
+
+  <button onclick="next('finalPage')">
+    Open your final surprise 🎁
+  </button>
+
+</div>
+</section>
+
+
+<!-- PAGE 8: FINAL -->
+<section id="finalPage">
+<div class="content glass">
+
+  <div class="small">JUST FOR YOU</div>
+
+  <div class="final-heart">❤️</div>
+
+  <h1>Faizuuu</h1>
+
+  <h2>Stay Happy, Always.</h2>
+
+  <p>
+    I hope this little website brought
+    a tiny smile to your face.
+  </p>
+
+  <p>
+    And remember...
+    you're allowed to be angry,
+    you're allowed to have feelings,
+    and you're always worthy of kindness.
+  </p>
+
+  <div class="garden">🌷🌷🌷</div>
+
+  <h2 style="font-size:38px">
+    I'm genuinely sorry. ❤️
+  </h2>
+
+  <p>
+    From someone who really wants
+    to see you happy.
+  </p>
+
+  <button onclick="celebrate()">
+    Send me a little virtual hug 🫂
+  </button>
+
+  <div id="hug"></div>
+
+  <footer>THE END... BUT THE SMILES SHOULD CONTINUE 💗</footer>
 
 </div>
 </section>
@@ -303,90 +544,154 @@ footer {
 
 <script>
 
-let opened = false;
-
-function goToLetter() {
-  document.getElementById("letterSection")
-  .scrollIntoView({behavior:"smooth"});
+// STAR BACKGROUND
+for(let i=0;i<65;i++){
+  let star=document.createElement("div");
+  star.className="star";
+  star.textContent="✦";
+  star.style.left=Math.random()*100+"%";
+  star.style.top=Math.random()*100+"%";
+  star.style.fontSize=(5+Math.random()*10)+"px";
+  star.style.animationDelay=Math.random()*3+"s";
+  document.getElementById("stars").appendChild(star);
 }
 
-function openLetter() {
+// NAVIGATION
+function next(id){
+  document.getElementById(id).scrollIntoView({
+    behavior:"smooth"
+  });
+}
 
-  if(opened) return;
-  opened = true;
+// PROGRESS BAR
+window.addEventListener("scroll",()=>{
+  let total=document.documentElement.scrollHeight-innerHeight;
+  let percent=total>0?(scrollY/total)*100:0;
+  document.getElementById("progress").style.width=percent+"%";
+});
+
+// LETTER ANIMATION
+let letterOpened=false;
+
+function openLetter(){
+
+  if(letterOpened)return;
+  letterOpened=true;
 
   document.getElementById("letter").style.display="block";
 
-  const message =
-`Dear Faizuuu ❤️
+  let message=`My dear Faizuuu ❤️
 
-I know I upset you, and I'm genuinely sorry.
+I don't know the perfect words to make everything okay.
 
-I don't want to make excuses or pretend that nothing happened.
+But I want you to know that I'm genuinely sorry for upsetting you.
 
-Your feelings matter, and I wish I had been more careful.
+I never want you to feel like your feelings don't matter.
 
-You bring so much happiness into my days, and I never want you to feel that you aren't appreciated.
+Sometimes I may get things wrong, but I want to learn from them.
 
-My Shernii, I hope you know how special you are.
+My Shernii, please don't ever think that you have to hide your feelings from me.
 
-I can't promise to be perfect, but I can promise to listen, understand and try to do better.
+You deserve patience, care and respect.
 
-Take your time. I'll respect your feelings.
+I won't ask you to forget what happened instantly.
 
-One genuine sorry, with lots of love. ❤️
+I'll just say this from my heart:
 
-— From someone who wants to see you smile`;
+I'm sorry, Faizuuu. 🥺
+
+Take your time. And whenever you're ready, I'd love to see that beautiful smile again.
+
+With love,
+Your Faizuuu's favourite troublemaker? ❤️`;
 
   let i=0;
+  let target=document.getElementById("typed");
 
-  function type() {
-    if(i<message.length) {
-      document.getElementById("typing").textContent += message.charAt(i);
+  function type(){
+    if(i<message.length){
+      target.textContent+=message.charAt(i);
       i++;
       setTimeout(type,35);
     }
   }
-
   type();
 }
 
-function answerYes() {
-  document.getElementById("answer").innerHTML =
-  "Okayyy 😭 I understand. I won't rush you. Just know I'm genuinely sorry. ❤️";
+// ANSWERS
+function answer(n){
+
+  let r=document.getElementById("reply");
+
+  if(n===1){
+    r.innerHTML="Okay, Faizuuu 😭 I understand. I won't rush you. You can take your time. ❤️";
+  }
+  else if(n===2){
+    r.innerHTML="A little angry is still angry! 🥺 I'll try to do better.";
+  }
+  else{
+    r.innerHTML="That makes me happy! 🥹 But your feelings always matter. Sending a gentle hug. 💗";
+  }
 }
 
-function answerNo() {
-  document.getElementById("answer").innerHTML =
-  "A little less? That's a tiny victory! 🥹❤️ Sending you a virtual hug.";
+// FLOATING FLOWERS
+let symbols=["🌷","🌸","💗","💕","✨"];
+
+setInterval(()=>{
+  let flower=document.createElement("div");
+  flower.className="petal";
+  flower.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+  flower.style.left=Math.random()*100+"vw";
+  flower.style.fontSize=(15+Math.random()*15)+"px";
+  flower.style.animationDuration=(7+Math.random()*6)+"s";
+  document.body.appendChild(flower);
+  setTimeout(()=>flower.remove(),14000);
+},650);
+
+// OPTIONAL MUSIC
+let musicOn=false;
+
+function toggleMusic(){
+  let song=document.getElementById("song");
+
+  if(!song.src){
+    alert("Add your own romantic MP3 URL in the audio element to enable music.");
+    return;
+  }
+
+  if(!musicOn){
+    song.play();
+    musicOn=true;
+    document.getElementById("music").textContent="♫ Music: ON";
+  }else{
+    song.pause();
+    musicOn=false;
+    document.getElementById("music").textContent="♫ Music: OFF";
+  }
 }
 
-function showSurprise() {
-  document.getElementById("surprise").style.display="block";
-  document.getElementById("surprise")
-  .scrollIntoView({behavior:"smooth",block:"center"});
+// FINAL HUG
+function celebrate(){
+
+  document.getElementById("hug").innerHTML=
+  "<h2 style='font-size:38px;margin-top:20px'>BIGGEST HUG! 🫂💗</h2><p>Sending you a thousand virtual hugs, Faizuuu! 🌷</p>";
+
+  for(let i=0;i<25;i++){
+    setTimeout(()=>{
+      let el=document.createElement("div");
+      el.className="petal";
+      el.textContent=["💗","❤️","🌷","✨"][Math.floor(Math.random()*4)];
+      el.style.left=Math.random()*100+"vw";
+      el.style.fontSize="25px";
+      el.style.animationDuration="4s";
+      document.body.appendChild(el);
+      setTimeout(()=>el.remove(),5000);
+    },i*100);
+  }
 }
-
-// Floating tulip petals and hearts
-const symbols=["🌷","💗","💕","🌸","✨"];
-
-function createFlower() {
-  const el=document.createElement("div");
-  el.className="floating";
-  el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
-  el.style.left=Math.random()*100+"vw";
-  el.style.fontSize=(15+Math.random()*18)+"px";
-  el.style.animationDuration=(6+Math.random()*6)+"s";
-
-  document.body.appendChild(el);
-
-  setTimeout(()=>el.remove(),12000);
-}
-
-setInterval(createFlower,650);
 
 </script>
 
 </body>
-      </html>
-      
+  </html>
+  
