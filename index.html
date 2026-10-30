@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Faiza ❤️</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(135deg, #ffe5ed, #fff5f7, #fce0e9);
+  color: #803d57;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 450px;
+  margin: 55px auto;
+  padding: 35px 23px;
+  background: rgba(255,255,255,0.75);
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  box-shadow: 0 12px 35px #c77b9630;
+  position: relative;
+  z-index: 2;
+}
+
+.tulip {
+  font-size: 65px;
+  margin-bottom: 15px;
+  animation: float 3s ease-in-out infinite;
+}
+
+h1 {
+  font-size: 38px;
+  color: #bd5579;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 19px;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+.heart {
+  color: #ed7296;
+  font-size: 25px;
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 14px 25px;
+  margin: 12px 5px;
+  background: #d96c91;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px #d96c9140;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.06);
+  background: #bd5579;
+}
+
+#letter {
+  display: none;
+  margin-top: 25px;
+  padding: 20px;
+  background: #fff0f4;
+  border-radius: 18px;
+  animation: appear 1s ease;
+}
+
+#response {
+  min-height: 35px;
+  margin-top: 15px;
+  font-size: 17px;
+  color: #bd5579;
+}
+
+.flower {
+  position: fixed;
+  top: -40px;
+  font-size: 22px;
+  animation: fall linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.footer {
+  margin-top: 25px;
+  font-size: 13px;
+  color: #b77a8e;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="tulip">🌷</div>
+
+  <h1>Hey Faiza ❤️</h1>
+
+  <div class="subtitle">
+    My Faizuuu, My Shernii...
+  </div>
+
+  <p>
+    I know you're angry with me right now.
+    And maybe I deserve that.
+  </p>
+
+  <p>
+    But I really don't like knowing that
+    I've hurt someone who means so much to me.
+  </p>
+
+  <div class="heart">♡</div>
+
+  <p>
+    I don't want to make excuses.
+    I just want to say...
+  </p>
+
+  <h2 style="color:#c65c80;">I'm Sorry, Faiza 🥺</h2>
+
+  <p>
+    You deserve smiles, happiness and beautiful moments.
+    Not reasons to be upset.
+  </p>
+
+  <button onclick="showLetter()">
+    Open my little message 💌
+  </button>
+
+  <div id="letter">
+
+    <h2>For You, Faizuuu 💗</h2>
+
+    <p>
+      My dear Shernii,
+    </p>
+
+    <p>
+      If I could send you a garden,
+      I'd fill it with your favourite tulips. 🌷
+      Not because flowers can fix everything,
+      but because you deserve beautiful things.
+    </p>
+
+    <p>
+      I may not always get everything right,
+      but I'm genuinely sorry for upsetting you.
+      I'll try to understand you better
+      instead of just saying sorry.
+    </p>
+
+    <p>
+      I hope this little surprise brings
+      even a tiny smile to your face.
+    </p>
+
+    <p>
+      No pressure to forgive me immediately.
+      Take your time. ❤️
+    </p>
+
+    <h3 style="color:#bd5579;">
+      Always your Faizuuu's admirer 💕
+    </h3>
+
+  </div>
+
+  <button onclick="sendSmile()">
+    One little smile? 🥺
+  </button>
+
+  <div id="response"></div>
+
+  <div class="footer">
+    Made with love, just for Faiza 🌷
+  </div>
+
+</div>
+
+<script>
+
+function showLetter() {
+  const letter = document.getElementById("letter");
+  letter.style.display = "block";
+  letter.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
+}
+
+function sendSmile() {
+  document.getElementById("response").innerHTML =
+    "Even one little smile from you would make my day. 🥹❤️";
+}
+
+// Falling tulips and hearts
+const flowers = ["🌷", "🌸", "💗", "💕", "🌷"];
+
+function createFlower() {
+  const flower = document.createElement("div");
+  flower.className = "flower";
+  flower.innerHTML =
+    flowers[Math.floor(Math.random() * flowers.length)];
+
+  flower.style.left = Math.random() * 100 + "vw";
+  flower.style.animationDuration =
+    (5 + Math.random() * 6) + "s";
+
+  flower.style.opacity = Math.random() * 0.5 + 0.5;
+
+  document.body.appendChild(flower);
+
+  setTimeout(() => flower.remove(), 11000);
+}
+
+setInterval(createFlower, 600);
+
+</script>
+
+</body>
+  </html>
+  
