@@ -648,27 +648,36 @@ setInterval(()=>{
   setTimeout(()=>flower.remove(),14000);
 },650);
 
-// OPTIONAL MUSIC
-let musicOn=false;
 
-function toggleMusic(){
-  let song=document.getElementById("song");
+// BACKGROUND MUSIC FOR FAIZUUU ❤️
+let musicOn = false;
 
-  if(!song.src){
-    alert("Add your own romantic MP3 URL in the audio element to enable music.");
-    return;
-  }
+const song = document.getElementById("song");
+const musicButton = document.getElementById("music");
 
-  if(!musicOn){
-    song.play();
-    musicOn=true;
-    document.getElementById("music").textContent="♫ Music: ON";
-  }else{
+async function toggleMusic() {
+
+  if (!musicOn) {
+    try {
+      await song.play();
+
+      musicOn = true;
+      musicButton.textContent = "♫ Music: ON ❤️";
+
+    } catch (error) {
+      musicButton.textContent = "Tap to play again 🎵";
+      alert("Please check that faiza-song.mp3 is in the correct folder.");
+    }
+
+  } else {
+
     song.pause();
-    musicOn=false;
-    document.getElementById("music").textContent="♫ Music: OFF";
+    musicOn = false;
+    musicButton.textContent = "♫ Music: OFF";
+
   }
 }
+  
 
 // FINAL HUG
 function celebrate(){
